@@ -52,8 +52,7 @@ async def main():
         print(f"User {command.sender_name} issued !kiss; Status code 0")
     
 
-    asyncio.create_task(events.check_and_send_events(socket))
-    asyncio.create_task(events.check_member_status(socket))
+    asyncio.create_task(events.check_and_send_events(socket)
     
     
     await socket.hang()
